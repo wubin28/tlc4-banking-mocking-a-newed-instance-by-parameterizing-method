@@ -8,7 +8,7 @@ public class JsonListResult {
     }
 
     public void setStatus(int status) {
-        this.status = status;
+        throw new UnsupportedOperationException("JsonListResult.setStatus() not supported yet.");
     }
 
     public int getStatus() {
