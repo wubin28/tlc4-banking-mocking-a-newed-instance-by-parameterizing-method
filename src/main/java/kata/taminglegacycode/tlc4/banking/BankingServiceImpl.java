@@ -13,26 +13,5 @@ public class BankingServiceImpl {
         if (length < 3) {
             result.setStatus(MessageCode.TSC_1);
         }
-
-
-
-    }
-
-    @Test
-    void aaaTest() {
-        BankingServiceImpl spyService = spy(new BankingServiceImpl());
-
-        doReturn(mockResult).when(spyService).buildResult();
-
-    }
-
-    @Test
-    void bbbTest() {
-        BankingServiceImpl fakeService = new BankingServiceImpl() {
-            @Override
-            public void buildResult() {
-
-            }
-        }
     }
 }
